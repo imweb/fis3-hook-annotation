@@ -37,7 +37,7 @@ fis.hook('annotation');
 
 `file.moduleId = {String}`
 
-#### `@release` `{String}`
+#### `@releaseTo` `{String}`
 
 `file.release = {String}`
 

@@ -14,7 +14,7 @@ fis3注解, 使用注解修改fis文件属性, 精简`fis-conf.js`
 
 ```js
 // fis-conf.js
-fis.hook('no-wrap');
+fis.hook('annotation');
 ```
 
 ## 语法

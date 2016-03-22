@@ -19,7 +19,7 @@ fis.hook('annotation');
 
 ## 语法
 
-`@annotation[:media] ["param"]..`
+`@annotation[:media] [param]..`
 
 ## API
 
@@ -37,13 +37,25 @@ fis.hook('annotation');
 
 `file.moduleId = {String}`
 
+#### `@release` `{String}`
+
+`file.release = {String}`
+
 #### `@es6`
 
-`file.parser = fis.plugin('babel')`
+`file.parser = fis.plugin('babel')` babel
 
 #### `@noParser`
 
-`file.parser = null`
+`file.parser = null` 取消babel parser
+
+#### `@uglify`
+
+`file.optimizer = fis.plugin('uglify-js')` uglify压缩
+
+#### `@noOptimizer`
+
+`file.optimizer = null` 取消min压缩
 
 ## Note
 

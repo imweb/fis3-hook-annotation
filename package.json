@@ -1,11 +1,11 @@
 {
   "name": "fis3-hook-annotation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/feix760/fis3-hook-annotation.git"
+    "url": "https://github.com/imweb/fis3-hook-annotation.git"
   },
   "keywords": [
     "fis3",
@@ -17,9 +17,9 @@
   },
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/feix760/fis3-hook-annotation/issues"
+    "url": "https://github.com/imweb/fis3-hook-annotation/issues"
   },
-  "homepage": "https://github.com/feix760/fis3-hook-annotation",
+  "homepage": "https://github.com/imweb/fis3-hook-annotation",
   "dependencies": {
   }
 }

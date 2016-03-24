@@ -1,6 +1,6 @@
 {
   "name": "fis3-hook-annotation",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -8,8 +8,8 @@
     "url": "https://github.com/imweb/fis3-hook-annotation.git"
   },
   "keywords": [
-    "fis3",
-    "commonJs",
+    "fis",
+    "hook",
     "annotation"
   ],
   "author": {

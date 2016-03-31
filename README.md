@@ -1,6 +1,6 @@
 # fis3-hook-annotation
 
-fis3注解, 使用注解修改fis文件属性, 精简`fis-conf.js`
+使用注解修改fis文件属性, 精简`fis-conf.js`
 
 ## Demo
 
@@ -29,7 +29,7 @@ fis.hook('annotation');
 #### `@noWrap` 
 
 ```js
-file.wrap = false
+file.wrap = false // 将不会被CommonJs使用define包裹
 ```
 
 #### `@noMod`

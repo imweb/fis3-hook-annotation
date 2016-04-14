@@ -29,7 +29,25 @@ fis.hook('annotation');
 #### `@setProperty name value`
 
 ```js
-file[`name`] = `value` // 设置任意的属性
+file[`name`] = `value` // 设置任意属性
+```
+
+#### `@noParser`
+
+```js
+file.parser = null // 取消scss/es6 babel等parser
+```
+
+#### `@noOptimizer`
+
+```js
+file.optimizer = null // 取消min压缩
+```
+
+#### `@releaseTo release`
+
+```js
+file.release = `release`
 ```
 
 ### js文件
@@ -46,16 +64,10 @@ file.wrap = false // 将不会被CommonJs使用define包裹
 file.isMod = false
 ```
 
-#### `@moduleId` `{String}`
+#### `@moduleId moduleId`
 
 ```js
-file.moduleId = `{String}`
-```
-
-#### `@releaseTo release`
-
-```js
-file.release = `release`
+file.moduleId = `moduleId`
 ```
 
 #### `@es6`
@@ -64,34 +76,28 @@ file.release = `release`
 file.parser = fis.plugin('babel')  // babel
 ```
 
-#### `@noParser`
-
-```js
-file.parser = null // 取消es6 babel等parser
-```
-
 #### `@uglify`
 
 ```js
 file.optimizer = fis.plugin('uglify-js') // uglify压缩
 ```
 
-#### `@noOptimizer`
-
-```js
-file.optimizer = null // 取消min压缩
-```
-
 #### `@useRaw`
 
 ```js
 file.wrap = false;  // 不被define包裹
-file.parser = null; // 取消es6 babel等parser
+file.parser = null; // 取消parser
 file.optimizer = null; // 取消min压缩
 ```
 
 ### css文件
 
+#### `@useRaw`
+
+```js
+file.parser = null; // 取消parser
+file.optimizer = null; // 取消min压缩
+```
 
 ### html文件
 

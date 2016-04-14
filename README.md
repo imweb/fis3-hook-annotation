@@ -24,6 +24,14 @@ fis.hook('annotation');
 
 ## API
 
+### 所有文件
+
+#### `@setProperty name value`
+
+```js
+file[`name`] = `value` // 设置任意的属性
+```
+
 ### js文件
 
 #### `@noWrap` 
@@ -44,10 +52,10 @@ file.isMod = false
 file.moduleId = `{String}`
 ```
 
-#### `@releaseTo` `{String}`
+#### `@releaseTo release`
 
 ```js
-file.release = `{String}`
+file.release = `release`
 ```
 
 #### `@es6`
@@ -59,7 +67,7 @@ file.parser = fis.plugin('babel')  // babel
 #### `@noParser`
 
 ```js
-file.parser = null // 取消babel parser
+file.parser = null // 取消es6 babel等parser
 ```
 
 #### `@uglify`
@@ -72,6 +80,14 @@ file.optimizer = fis.plugin('uglify-js') // uglify压缩
 
 ```js
 file.optimizer = null // 取消min压缩
+```
+
+#### `@useRaw`
+
+```js
+file.wrap = false;  // 不被define包裹
+file.parser = null; // 取消es6 babel等parser
+file.optimizer = null; // 取消min压缩
 ```
 
 ## Note
